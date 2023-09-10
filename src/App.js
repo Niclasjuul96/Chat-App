@@ -3,7 +3,9 @@ import "./style.scss"
 
 function App() {
   return (
-    <Register/>
+    <div className="App">
+      <Register/>
+    </div>
   );
 }
 
