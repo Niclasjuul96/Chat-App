@@ -13,6 +13,7 @@ const Message = () => {
         <img src={avatar} alt="" />
       </div>
     </div>
+    
   )
 }
 
