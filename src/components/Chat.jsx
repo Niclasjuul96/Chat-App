@@ -11,9 +11,9 @@ export const Chat = () => {
       <div className='chat-Info'>
         <span>Niclas</span>
         <div className='chatIncons'>
-          <img src={Cam}/>
-          <img src={Add}/>
-          <img src={More}/>
+          <img src={Cam} alt='Cam'/>
+          <img src={Add} alt='add'/>
+          <img src={More} alt='more'/>
         </div>
       </div>
       <Messages />
