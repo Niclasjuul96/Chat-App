@@ -11,9 +11,10 @@ const Search = () => {
   const { currentUser } = useContext(AuthContext)
 
   const handleSearch = async () => {
+    const formattedUsername = username.charAt(0).toUpperCase() + username.slice(1).toLowerCase();
     const q = query(
       collection(db, "users"),
-      where("displayName", "==", username)
+      where("displayName", "==", formattedUsername),
     );
 
     try {
