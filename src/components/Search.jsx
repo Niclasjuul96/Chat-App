@@ -38,14 +38,8 @@ const Search = () => {
       : user.uid + currentUser.uid;
 
     try {
-      console.log("before getDoc");
       const res = await getDoc(doc(db, "chats", combinedId));
-      console.log("after getDoc");
-
-      console.log("Result from getDoc: ", res);
-      console.log("Exists property: ", res.exists); 
-      console.log("Result from res.exists(): ", res.exists());
-
+      
       if (!res.exists()) {
         //create a chat in chats collection
         await setDoc(doc(db, "chats", combinedId), { messages: [] });
